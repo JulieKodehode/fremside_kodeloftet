@@ -1,0 +1,21 @@
+/* General */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	/* TEMP COLOR */
+	background-image: linear-gradient(to right, red, green);
+}
+
+.text {
+	max-width: 50%;
+}

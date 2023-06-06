@@ -26,16 +26,6 @@ ul {
 }
 
 /* MAIN */
-
-/* Default section */
-section {
-	height: 100vh;
-	padding: 1em;
-
-	/* Debug */
-	border: 3px yellow solid;
-}
-
 .mainCard {
 	min-height: 100vh;
 	display: flex;
@@ -50,30 +40,33 @@ section {
 	border: 3px green solid;
 }
 
-.portrait {
-	/* Temp fix width */
-	height: 500px;
-	width: 500px;
-
-	border-radius: 50%;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
-		rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
-		rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	margin: 1em;
+.prosjekt4 {
+	/* TEMP FIX SIZE */
+	height: 800px;
+	width: 800px;
+	text-align: start;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.text {
-	padding: 0.3em;
+.mitt {
+	color: red;
+	font-size: 35;
+	text-transform: uppercase;
 }
 
-/* PROSJEKT 5 */
-.prosjekt5 {
-	background-color: lightpink;
+.prosjekt {
+	color: orange;
+	font-size: 40px;
+	letter-spacing: 0.5em;
 }
 
-/* PROSJEKT 6 */
-.prosjekt6 {
-	background-color: plum;
+.fire {
+	color: green;
+	font-size: 35px;
+	text-transform: uppercase;
 }
 
 /* FOOTER */
