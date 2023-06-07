@@ -5,16 +5,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Min fremside</title>
-
 		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="style.css" />
 		<link rel="shortcut icon" href="images/pizza.ico" type="image/x-icon" />
+		<script src="index.js" defer></script>
 	</head>
 	<body>
 		<!-- header  -->
-		<header>
-			<nav class="navBar">
+		<header class="header">
+			<nav>
 				<!-- EXTERNAL NAV LINK -->
-				<ul>
+				<ul class="navList">
 					<p>Linker som tar deg UT av fremsiden</p>
 					<li class="navItem">
 						<a href="prosjekt/prosjekt1/index.html" target="_blank">Prosjekt 1</a>
@@ -25,7 +26,7 @@
 				</ul>
 
 				<!-- INTERNAL NAV LINKS -->
-				<ul>
+				<ul class="navList">
 					<p>Linker som blar deg NEDOVER fremsiden</p>
 					<li class="navItem">
 						<a href="#Home"> Hjem</a>
@@ -39,8 +40,8 @@
 				</ul>
 
 				<!-- INTERNAL NAV LINKS -->
-				<ul>
-					<p>Linker som "kun" endred main delen</p>
+				<ul class="navList">
+					<p>Linker som KUN endrer main</p>
 					<li class="navItem">
 						<a href="index.html">Hjem</a>
 					</li>
@@ -56,47 +57,53 @@
 
 		<!-- main -->
 		<main>
-			<section id="Home" class="section | mainCard">
-				<h1>JULIE</h1>
-				<img class="portrait" src="images/cartoonprofilepic.png" alt="tegnet portrett av Julie" />
-				<h2 text="text">Dette er en fremside som hoster mine prosjekt</h2>
-				<p class="text">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo magni consequuntur assumenda
-					natus sequi, beatae a alias doloribus voluptate quasi.
-					<strong>Kort tekst om meg.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Corrupti, sit!
-				</p>
+			<section id="Home" class="section home">
+				<div class="card">
+					<h1>JULIE</h1>
+					<img class="portrait" src="images/cartoonprofilepic.png" alt="tegnet portrett av Julie" />
+					<h2 text="text">Dette er en fremside som hoster mine prosjekt</h2>
+					<p class="text">
+						Her på denne nettsiden vil jeg vise frem prosjekter som jeg har laget på web-utvikler kurset
+						Kodeloftet. Jeg har lært HTML, CSS og JS som jeg kommer til å vise i desse prosjektene.
+					</p>
+				</div>
 			</section>
 
-			<!-- PROSJEKT 1 -->
-			<section id="Prosjekt5" class="section | prosjekt5">
+			<!-- PROSJEKT 5 -->
+			<section id="Prosjekt5" class="section prosjekt5">
 				<h3>Prosjekt 5</h3>
 				<main>
-					<h1>Hei</h1>
-					<h2>Her</h2>
-					<h3>Er</h3>
-					<h4>Content</h4>
+					<div>
+						<h2 class="nameAnimation">MITT NAVN ER JULIE</h2>
+					</div>
 				</main>
 			</section>
 
-			<!-- PROSJEKT 2 -->
-			<section id="Prosjekt6" class="section | prosjekt6">
+			<!-- PROSJEKT 6 -->
+			<section id="Prosjekt6" class="section prosjekt6">
 				<h3>Prosjekt 6</h3>
-				<main>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ullam aut magni, delectus, vitae
-						distinctio perferendis incidunt porro ab rem voluptas optio! Eum recusandae ratione laboriosam
-						ex temporibus, magnam impedit aut, quidem praesentium laborum excepturi consequatur alias
-						similique id iure optio omnis sed quaerat. Exercitationem, nisi! Illo id, ullam fuga suscipit
-						alias ab repudiandae doloribus maxime quod sunt fugiat corrupti!
-					</p>
-				</main>
+				<div id="div" class="div">
+					<button id="button" class="button" onclick="buttonChange()">Trykk på meg 😉</button>
+				</div>
 			</section>
 		</main>
 
 		<!-- footer -->
-		<footer>
-			<p>Made by Julie</p>
+		<footer class="footer">
+			<h4>Made by Julie</h4>
+			<nav>
+				<ul class="navList">
+					<li class="navItem">
+						<img src="#" alt="github icon" />
+					</li>
+					<li class="navItem">
+						<img src="#" alt="instagram icon" />
+					</li>
+					<li class="navItem">
+						<img src="#" alt="mail icon" />
+					</li>
+				</ul>
+			</nav>
 		</footer>
 	</body>
 </html>
