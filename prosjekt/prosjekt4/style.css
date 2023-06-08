@@ -1,19 +1,19 @@
 /* General */
-* {
+/* * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+} */
 
 /* HEADER */
-.header {
+/* .header {
 	min-width: 100%;
 	padding: 1em;
 
-	/* Debug */
-	/* Red symbolize header and footer */
+	Debug
+	Red symbolize header and footer
 	border: 3px red solid;
-}
+} */
 
 .navList {
 	display: flex;
@@ -72,7 +72,7 @@
 }
 
 /* FOOTER */
-.footer {
+/* .footer {
 	min-width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -80,7 +80,7 @@
 	align-items: center;
 	padding: 1em;
 
-	/* Debug */
-	/* Red symbolize header and footer */
+	Debug
+	Red symbolize header and footer
 	border: 3px red solid;
-}
+} */
