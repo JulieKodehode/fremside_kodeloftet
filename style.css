@@ -12,7 +12,7 @@
 
 	/* Debug */
 	/* Red symbolize header and footer */
-	border: 3px red solid;
+	/* border: 3px red solid; */
 }
 
 .navList {
@@ -41,7 +41,7 @@
 	align-items: center;
 	/* Debug */
 	/* Green symbolizes home */
-	border: 3px green solid;
+	/* border: 3px green solid; */
 }
 
 /* Div / card */
@@ -75,7 +75,7 @@
 
 	/* Debug */
 	/* Yellow symbolizes project */
-	border: 3px yellow solid;
+	/* border: 3px yellow solid; */
 }
 
 .nameAnimation {
@@ -113,7 +113,7 @@
 
 	/* Debug */
 	/* Yellow symbolizes project */
-	border: 3px yellow solid;
+	/* border: 3px yellow solid; */
 }
 
 .div {
@@ -150,5 +150,5 @@
 
 	/* Debug */
 	/* Red symbolize header and footer */
-	border: 3px red solid;
+	/* border: 3px red solid; */
 }
