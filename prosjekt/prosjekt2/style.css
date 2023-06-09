@@ -1,4 +1,18 @@
+/* General */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* HEADER */
+.multimediaHeader {
+	display: flex;
+	justify-content: center;
+}
+
 /* MAIN */
+/* TEMP MAIN */
 main {
 	min-height: 100vh;
 	display: flex;
@@ -10,6 +24,4 @@ main {
 	background-image: linear-gradient(to right, red, green);
 }
 
-.text {
-	max-width: 50%;
-}
+/* FOOTER */
