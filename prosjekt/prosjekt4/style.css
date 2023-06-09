@@ -44,31 +44,20 @@
 
 .prosjekt4 {
 	/* TEMP FIX SIZE */
-	height: 800px;
-	width: 800px;
-	text-align: start;
-	display: inline-flex;
+	height: 700px;
+	width: 700px;
+
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: teal;
+	border-radius: 50%;
 }
 
-.mitt {
-	color: red;
-	font-size: 35;
-	text-transform: uppercase;
-}
-
-.prosjekt {
-	color: orange;
-	font-size: 40px;
-	letter-spacing: 0.5em;
-}
-
-.fire {
-	color: green;
-	font-size: 35px;
-	text-transform: uppercase;
+.text {
+	/* TEMP FIX SIZE */
+	width: 300px;
 }
 
 /* FOOTER */
