@@ -19,9 +19,24 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
 
-	/* TEMP COLOR */
-	background-image: linear-gradient(to right, red, green);
+.gridGallery {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	gap: 1em;
+	justify-items: center;
+	align-items: center;
+}
+
+.rectangle {
+	width: 16em;
+	height: 13em;
+}
+
+.square {
+	width: 11em;
+	height: 11em;
 }
 
 /* FOOTER */
