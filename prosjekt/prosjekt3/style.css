@@ -53,11 +53,7 @@
 	align-items: center;
 	background-color: teal;
 	border-radius: 50%;
-}
-
-.text {
-	/* TEMP FIX SIZE */
-	width: 300px;
+	margin: 0.5em;
 }
 
 /* FOOTER */
