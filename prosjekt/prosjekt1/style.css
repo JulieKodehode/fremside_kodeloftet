@@ -5,17 +5,11 @@
 	box-sizing: border-box;
 }
 
-/* HEADER */
-.parallaxHeader {
-	display: flex;
-	justify-content: center;
-}
-
-/* PARALLAX */
-.parallax1 {
-	/* Parallax image */
+/* MAIN */
+.parallax {
 	height: 100vh;
-	background-image: url(images/parallaxBG1.jpg);
+
+	/* Image effect */
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -26,65 +20,32 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+.parallax1 {
+	background-image: url(images/cliffsofmoher.jpg);
 }
 
 .parallax2 {
-	/* Parallax image */
-	height: 400px;
-	background-image: url(images/parallaxBG2.jpg);
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-
-	/* Flexbox */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	background-image: url(images/gapofdunloe.jpg);
 }
 
 .parallax3 {
-	/* Parallax image */
-	height: 400px;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-image: url(images/parallaxBG3.jpg);
-
-	/* Flexbox */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	background-image: url(images/rockofcashel.jpg);
 }
 
 /* Styling for text inside images */
 .parallax1 h1,
-.parallax2 h2,
-.parallax3 h2 {
-	background-color: rgba(255, 255, 255, 0.7);
+.parallax1 p {
+	background-color: rgba(255, 255, 255, 0.9);
 	padding: 10px;
 }
 
 /* Styling for text between images */
 .content {
-	padding: 75px 10%;
-	max-width: 500px;
-	margin: 0 auto;
-}
-
-/* FOOTER */
-.footer {
-	min-width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 1em;
-
-	/* Debug */
-	/* Red symbolize header and footer */
-	/* border: 3px red solid; */
+	padding: 5em;
+	max-width: 100%;
 }
