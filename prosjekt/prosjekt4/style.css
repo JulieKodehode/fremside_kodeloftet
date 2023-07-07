@@ -6,13 +6,9 @@
 }
 
 /* HEADER */
-.header {
-	min-width: 100%;
-	padding: 1em;
-
-	/* Debug */
-	/* Red symbolize header and footer */
-	/* border: 3px red solid; */
+.todoHeader {
+	display: flex;
+	justify-content: center;
 }
 
 .navList {
