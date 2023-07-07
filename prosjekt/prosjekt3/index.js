@@ -1,6 +1,5 @@
-// Unit Converter
-
-// First we must declare our global-scope variables.  If we declared them in the function, they wouldn't be usable anywhere but inside the function.
+// First we must declare our global-scope variables.
+// If we declared them in the function, they wouldn't be usable anywhere but inside the function.
 
 // Global Variables
 const fromUnit = document.getElementById("from");
@@ -8,7 +7,8 @@ const toUnit = document.getElementById("to");
 let button = document.getElementById("convertBtn");
 
 function convert() {
-	// Inside the function, we declare the variables which need to be updated each time the function runs. If these were outside the function, their values would never update.
+	// Inside the function, we declare the variables which need to be updated each time the function runs.
+	// If these were outside the function, their values would never update.
 	const inputValue = parseFloat(document.getElementById("input").value);
 	const fromUnitValue = document.getElementById("from").value;
 	const toUnitValue = document.getElementById("to").value;
@@ -30,10 +30,11 @@ function convert() {
 		result = "There must be an error";
 	}
 
+	// Showes error because result is a string and not a number
 	document.getElementById("result").textContent = result.toFixed(2);
 }
 
-// Targeting our "convert" button and adding an event listener so it runs the convert funcion when we click it.
+// Targeting our "convert" button and adding an event listener so it runs the convert function(above) when we click it.
 button.addEventListener("click", convert);
 
 // Targeting the from & to inputs and adding an event listener which will listen for a change (when we change the dropdowns from miles to meters etc). When a change is detected, the sameUnits function will run.
