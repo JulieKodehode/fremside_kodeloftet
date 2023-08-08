@@ -1,2 +1,2 @@
 # fremside_kodeloftet
-Alternativ fremside for Kodeloftet som viser tre metoder for å vise prosjekter
+Et alternativ om hvordan en Fremside som viser prosjekter kan se ut for Kodeloftet
