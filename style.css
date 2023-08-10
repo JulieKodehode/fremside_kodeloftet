@@ -93,7 +93,7 @@ a {
 /* Div / card */
 .card {
 	/* TEMP FIX SIZE */
-	width: 40%;
+	width: 100%;
 
 	display: flex;
 	flex-direction: column;
@@ -105,11 +105,19 @@ a {
 /* Image / portrait */
 .portrait {
 	/* TEMP FIX SIZE */
-	height: 400px;
-	width: 400px;
+	height: 30%;
+	width: 30%;
 	border-radius: 50%;
 
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* MOBILE S TO MOBILE L */
+@media screen and (max-width: 426px) {
+	.portrait {
+		height: 90%;
+		width: 90%;
+	}
 }
 
 /* PROSJEKT 5 */
@@ -118,6 +126,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 
 	/* Debug */
 	/* Yellow symbolizes project */
@@ -183,6 +192,14 @@ a {
 /* JavaScript */
 .colorChange {
 	background-color: green;
+}
+
+/* MOBILE S TO MOBILE L */
+@media screen and (max-width: 426px) {
+	.div {
+		height: 250px;
+		width: 250px;
+	}
 }
 
 /* FOOTER */
