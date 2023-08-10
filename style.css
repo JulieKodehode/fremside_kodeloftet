@@ -7,24 +7,70 @@
 
 /* HEADER */
 .header {
+	position: sticky;
+	top: 0;
 	min-width: 100%;
-	padding: 1em;
 
+	/* TEMP */
+	background-color: white;
+
+	padding: 1em;
 	/* Debug */
 	/* Red symbolize header and footer */
 	/* border: 3px red solid; */
 }
 
+.navBar {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
+
+.burgerButton {
+	display: none;
+	background-color: inherit;
+	border: none;
+}
+
 .navList {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 
 	list-style-type: none;
 }
 
+a {
+	display: block;
+	color: red;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
 .navItem {
 	padding: 0.5em 1em;
+}
+
+/* MOBILE S TO MOBILE L */
+@media screen and (max-width: 426px) {
+	.burgerButton {
+		display: inline;
+	}
+
+	.navBar {
+		flex-direction: column-reverse;
+	}
+
+	.navList {
+		display: none;
+	}
+	.navHamburger {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 /* MAIN */
