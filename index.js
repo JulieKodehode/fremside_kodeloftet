@@ -27,10 +27,5 @@ let body = document.getElementById("body");
 
 sunAndMoon.addEventListener("click", () => {
 	sunAndMoon.classList.toggle("moon");
-	console.log("Clicked?");
-});
-
-body.addEventListener("click", () => {
 	body.classList.toggle("dark");
-	console.log("Clicked?");
 });
