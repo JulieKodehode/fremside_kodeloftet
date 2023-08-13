@@ -213,49 +213,6 @@ a {
 	}
 }
 
-/* PROSJEKT 6 */
-.prosjekt6 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-	/* Debug */
-	/* Yellow symbolizes project */
-	/* border: 3px yellow solid; */
-}
-
-.div {
-	/* TEMP FIX SIZE */
-	height: 400px;
-	width: 400px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: red;
-}
-
-.button {
-	height: 40px;
-	border: 3px solid black;
-	cursor: pointer;
-	padding: 0.5em;
-}
-
-/* JavaScript */
-.colorChange {
-	background-color: green;
-}
-
-/* MOBILE S TO MOBILE L */
-@media screen and (max-width: 426px) {
-	.div {
-		height: 250px;
-		width: 250px;
-	}
-}
-
 /* FOOTER */
 .footer {
 	min-width: 100%;

@@ -1,15 +1,3 @@
-const div = document.getElementById("div");
-const button = document.getElementById("button");
-
-button.onclick = () => {
-	div.classList.toggle("colorChange");
-	// console.log("Clicked?")
-};
-
-//
-//
-//
-
 let navBar = document.getElementById("navBar");
 let burgerButton = document.getElementById("burgerButton");
 
