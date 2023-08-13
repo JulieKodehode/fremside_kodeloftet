@@ -10,17 +10,6 @@
 	display: flex;
 	justify-content: center;
 }
-.navList {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	list-style-type: none;
-}
-
-.navItem {
-	padding: 0.5em 1em;
-}
 
 /* MAIN */
 .mainCard {
@@ -49,18 +38,4 @@
 	background-color: teal;
 	border-radius: 50%;
 	margin: 0.5em;
-}
-
-/* FOOTER */
-.footer {
-	min-width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 1em;
-
-	/* Debug */
-	/* Red symbolize header and footer */
-	/* border: 3px red solid; */
 }
