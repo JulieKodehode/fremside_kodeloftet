@@ -48,6 +48,7 @@
 	background-image: url(images/moon_filled.png);
 }
 
+/* NAV */
 .navBar {
 	display: flex;
 	flex-direction: row-reverse;
@@ -112,6 +113,18 @@ a {
 .section {
 	min-height: 100vh;
 	min-height: 100svh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 /* HOME */
@@ -121,39 +134,19 @@ a {
 	justify-content: center;
 	align-items: center;
 	gap: 1em;
+
 	/* Debug */
 	/* Green symbolizes home */
 	/* border: 3px green solid; */
 }
 
-/* Div / card */
-.card {
-	/* TEMP FIX SIZE */
-	width: 100%;
-
+.intro {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-
-	text-align: center;
-}
-
-/* Project display inside of main */
-.projectDisplay {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.projectCards {
-	display: flex;
-	flex-direction: row;
-	gap: 1em 0;
-}
-
-.projectPhoto {
-	height: 50%;
-	width: 50%;
+	gap: 1em;
+	max-width: 50%;
 }
 
 /* Image / portrait */
@@ -171,45 +164,6 @@ a {
 	.portrait {
 		height: 90%;
 		width: 90%;
-	}
-}
-
-/* PROSJEKT 5 */
-.prosjekt5 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-
-	/* Debug */
-	/* Yellow symbolizes project */
-	/* border: 3px yellow solid; */
-}
-
-.nameAnimation {
-	font-size: 60px;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	background: linear-gradient(
-		90deg,
-		rgba(105, 105, 186, 1) 0%,
-		rgba(235, 141, 0, 1) 25%,
-		rgba(214, 0, 255, 1) 49%,
-		rgba(0, 212, 255, 1) 50%,
-		rgba(0, 212, 255, 1) 100%
-	);
-	-webkit-background-clip: text;
-	background-size: 200% auto;
-	animation: fancyTextColor 4s linear infinite;
-}
-
-@keyframes fancyTextColor {
-	0% {
-		background-position: 0;
-	}
-	100% {
-		background-position: 100%;
 	}
 }
 

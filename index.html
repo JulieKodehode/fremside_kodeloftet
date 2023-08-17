@@ -5,9 +5,18 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Min fremside</title>
-		<link rel="stylesheet" href="style.css" />
 		<link rel="shortcut icon" href="images/pizza.ico" type="image/x-icon" />
-		<script src="index.js" defer></script>
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="/css/nameAnimation.css" />
+		<link rel="stylesheet" href="/css/unitConverter.css" />
+		<link rel="stylesheet" href="/css/todoList.css" />
+		<link rel="stylesheet" href="/css/prosjekter.css" />
+		<!-- JAVASCRIPT -->
+		<script src="/js/burgerButton.js" defer></script>
+		<script src="/js/sunAndMoon.js" defer></script>
+		<script src="/js/unitConverter.js" defer></script>
+		<script src="/js/todoList.js" defer></script>
 	</head>
 	<body id="body" class="light">
 		<!-- header  -->
@@ -19,9 +28,16 @@
 			<nav class="navBar">
 				<ul class="navList" id="navBar">
 					<li class="listItem"><a href="#Home">Home</a></li>
-					<li class="listItem"><a href="#Prosjekt5">Animasjon</a></li>
-					<li class="listItem"><a href="#Prosjekt6">Lysbryter</a></li>
+					<li class="listItem"><a href="#Projects">Prosjekter</a></li>
+					<li class="listItem"><a href="#Animation">Animasjon</a></li>
+					<li class="listItem">
+						<a href="#UnitConverter">Unit Converter</a>
+					</li>
+					<li class="listItem">
+						<a href="#TodoList">Todo List</a>
+					</li>
 				</ul>
+
 				<!-- THIS IS HAMBURGER -->
 				<img class="burgerButton" id="burgerButton" src="images/more.png" />
 			</nav>
@@ -29,48 +45,92 @@
 
 		<!-- main -->
 		<main>
+			<!-- HOME -->
 			<section id="Home" class="section home">
-				<div class="card">
+				<div class="intro">
 					<h1>JULIE</h1>
 					<img class="portrait" src="images/cartoonprofilepic.png" alt="tegnet portrett av Julie" />
-					<h2 text="text">Dette er en fremside som hoster mine prosjekt</h2>
-					<p class="text">
+					<h2>Dette er en Fremside som viser mine prosjekter</h2>
+					<p>
 						Her på denne nettsiden vil jeg vise frem prosjekter som jeg har laget på web-utvikler kurset
 						Kodeloftet. Jeg har lært HTML, CSS og JS som jeg kommer til å vise i desse prosjektene.
 					</p>
 				</div>
+			</section>
 
+			<!-- PROJECTS -->
+			<section id="Projects" class="section projects">
 				<div class="projectDisplay">
-					<h2>Her er noen av mine større prosjekter</h2>
-					<!-- EXTERNAL NAV LINK -->
+					<h3>Her er noen av mine større prosjekter som ikke vises på denne siden</h3>
 					<div class="projectCards">
 						<div class="projectCard">
+							<img src="#" alt="" />
+							<p>
+								Mitt første prosjekt var en parallax nettside, som er en scroll effekt for å gi en side
+								dybde mellom bilder i bakgrunnen og tekst som "flyter" over bildene.
+							</p>
 							<a href="prosjekt/prosjekt1/index.html" target="_blank">Parallax</a>
 						</div>
 						<div class="projectCard">
+							<img src="#" alt="" />
+							<p>
+								I mitt andre prosjekt har jeg laget et bilde galleri som har hoved fokus i de ulike typer
+								media vi kan legge til en nettside
+							</p>
 							<a href="prosjekt/prosjekt2/index.html" target="_blank">Media Galleri</a>
-						</div>
-						<div class="projectCard">
-							<a href="prosjekt/prosjekt3/index.html" target="_blank">Unit Converter</a>
-						</div>
-						<div class="projectCard">
-							<a href="prosjekt/prosjekt4/index.html" target="_blank">Todo List</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- PROSJEKT 5 -->
-			<section id="Prosjekt5" class="section prosjekt5">
+			<section id="Animation" class="section project">
 				<h3>Prosjekt 5</h3>
-				<main>
-					<div>
-						<h2 class="nameAnimation">MITT NAVN ER JULIE</h2>
-					</div>
+				<main class="project5">
+					<h2 class="nameAnimation">MITT NAVN ER JULIE</h2>
 				</main>
 			</section>
 
-			<!-- PROSJEKT 6 -->
+			<!-- PROSJEKT 3 -->
+			<section id="UnitConverter" class="section project">
+				<h3>Prosjekt 3</h3>
+				<main class="project3">
+					<p>Unit Converter</p>
+					<label for="input">Enter a value:</label>
+					<input type="number" id="input" />
+
+					<label for="from">From:</label>
+					<select name="from" id="from">
+						<option value="meters">Meters</option>
+						<option value="kilometers">Kilometers</option>
+						<option value="miles">Miles</option>
+					</select>
+
+					<label for="to">To:</label>
+					<select name="to" id="to">
+						<option value="meters">Meters</option>
+						<option value="kilometers">Kilometers</option>
+						<option value="miles">Miles</option>
+					</select>
+
+					<button id="convertBtn">Convert</button>
+					<p id="result"></p>
+				</main>
+			</section>
+
+			<!-- PROSJEKT 4 -->
+			<section id="TodoList" class="section project">
+				<h3>Prosjekt 4</h3>
+				<main class="project4">
+					<p>To-do list</p>
+					<label for="task-input">Enter your task here</label>
+					<div>
+						<input type="text" id="task-input" />
+						<button id="add-task">Add Task</button>
+					</div>
+					<ul id="task-list"></ul>
+				</main>
+			</section>
 		</main>
 
 		<!-- footer -->

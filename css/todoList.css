@@ -1,35 +1,7 @@
-/* General */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/* HEADER */
-.todoHeader {
-	display: flex;
-	justify-content: center;
-}
-
-/* MAIN */
-.mainCard {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-grow: 1;
-
-	text-align: center;
-
-	/* Debug */
-	/* border: 3px green solid; */
-}
-
-.prosjekt4 {
+.project4 {
 	/* TEMP FIX SIZE */
-	height: 700px;
-	width: 700px;
+	height: 400px;
+	width: 400px;
 
 	display: flex;
 	flex-direction: column;
