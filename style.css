@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	text-align: center;
 }
 
 /* BODY */
@@ -71,10 +72,14 @@
 
 a {
 	display: block;
-	color: red;
+	color: black;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 .navItem {
@@ -113,6 +118,7 @@ a {
 .section {
 	min-height: 100vh;
 	min-height: 100svh;
+	width: 100%;
 
 	display: flex;
 	flex-direction: column;

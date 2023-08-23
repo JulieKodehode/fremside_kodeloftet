@@ -11,3 +11,10 @@
 	border-radius: 50%;
 	margin: 0.5em;
 }
+
+@media screen and (max-width: 426px) {
+	.project3 {
+		height: 300px;
+		width: 300px;
+	}
+}
