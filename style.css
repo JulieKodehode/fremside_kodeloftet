@@ -28,7 +28,8 @@
 	align-items: center;
 
 	/* TEMP */
-	background-color: white;
+	background-color: #fdfdfd;
+	border-bottom: 2px solid black;
 
 	padding: 1em;
 	/* Debug */
@@ -183,7 +184,7 @@ a:hover {
 	padding: 1em;
 
 	/* TEMP */
-	background-color: white;
+	background-color: #fdfdfd;
 
 	/* Debug */
 	/* Red symbolize header and footer */
