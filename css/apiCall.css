@@ -32,6 +32,10 @@
 	color: #333;
 }
 
+.catFact {
+	color: #333;
+}
+
 @media screen and (max-width: 426px) {
 	.project7 div {
 		max-width: 300px;
