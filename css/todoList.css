@@ -1,7 +1,7 @@
 .project5 {
 	/* TEMP FIX SIZE */
-	height: 300px;
-	width: 300px;
+	height: 400px;
+	width: 400px;
 
 	display: flex;
 	flex-direction: column;
@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width: 426px) {
-	.project4 {
+	.project5 {
 		height: 300px;
 		width: 300px;
 	}
