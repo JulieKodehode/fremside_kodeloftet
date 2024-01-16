@@ -7,9 +7,88 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: lightblue;
-	border-radius: 50%;
+	gap: 10px;
+	border-radius: 10%;
 	margin: 0.5em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+}
+
+.inputLabel {
+	display: block;
+	font-size: 18px;
+}
+
+.input[type="number"] {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #ecf0f1;
+}
+
+.input[type="number"]:focus {
+	outline: none;
+	border-color: #2980b9;
+}
+
+.convertDiv {
+	display: flex;
+	gap: 10px;
+}
+
+.convertValueDiv {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.convertLabel {
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.convertSelect {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border-style: inset;
+	border-width: 2px;
+	background-color: #f8f8f8;
+}
+
+.convertSelect:focus {
+	outline: none;
+	border-color: #2980b9;
+}
+
+/* Styling for options */
+.convertSelect option {
+	background-color: #f8f8f8;
+	color: #333;
+}
+
+.convertBtn {
+	background-color: #3498db;
+	color: #fff;
+	padding: 12px 20px;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.convertBtn:hover {
+	background-color: #2980b9;
+}
+
+/* Result Styles */
+.result {
+	font-size: 18px;
+	font-weight: bold;
+	color: #2980b9;
+	margin-top: 20px;
+	text-align: center;
 }
 
 @media screen and (max-width: 426px) {

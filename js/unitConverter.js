@@ -31,7 +31,7 @@ function convert() {
 	}
 
 	// Showes error because result is a string and not a number
-	document.getElementById("result").textContent = result.toFixed(2);
+	document.getElementById("result").textContent = `${result.toFixed(2)} ${toUnitValue}`;
 }
 
 // Targeting our "convert" button and adding an event listener so it runs the convert function(above) when we click it.
