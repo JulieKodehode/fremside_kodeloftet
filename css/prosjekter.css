@@ -6,8 +6,8 @@
 }
 
 .projectCards {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	gap: 1em;
 }
 
@@ -24,6 +24,7 @@
 
 @media screen and (max-width: 426px) {
 	.projectCards {
+		display: flex;
 		flex-direction: column;
 	}
 	.projectCard {
