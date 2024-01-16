@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+}
+
+#multiStepForm {
+	width: 400px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.hidden {
+	display: none;
+}
+
+.step h2 {
+	margin-bottom: 20px;
+	color: #333;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	color: #555;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 16px;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
