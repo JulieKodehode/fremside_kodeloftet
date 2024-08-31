@@ -13,12 +13,14 @@
 		<link rel="stylesheet" href="/css/todoList.css" />
 		<link rel="stylesheet" href="/css/prosjekter.css" />
 		<link rel="stylesheet" href="css/apiCall.css" />
+		<link rel="stylesheet" href="css/bouncingBall.css">
 		<!-- JAVASCRIPT -->
 		<script src="/js/burgerButton.js" defer></script>
 		<script src="/js/sunAndMoon.js" defer></script>
 		<script src="/js/unitConverter.js" defer></script>
 		<script src="/js/todoList.js" defer></script>
 		<script src="js/apiCall.js" defer></script>
+		<script src="js/bouncingBall.js" defer></script>
 	</head>
 	<body id="body" class="light">
 		<!-- header  -->
@@ -115,7 +117,20 @@
 			<section id="Animation" class="section project">
 				<h3>Prosjekt 3</h3>
 				<main class="project3">
-					<h2 class="nameAnimation">MITT NAVN ER JULIE</h2>
+					<!-- Animation on text -->
+					<div>
+						<h2 class="nameAnimation">MITT NAVN ER JULIE</h2>
+					</div>
+
+					<!-- Animation on element -->
+					<div class="bounceContainer">
+						<div class="controls">
+							<button id="startButton" class="button">Start</button>
+							<button id="pauseButton" class="button">Pause</button>
+							<button id="resetButton" class="button">Reset</button>
+						</div>
+						<div id="circle" class="circle"></div>
+					</div>
 				</main>
 			</section>
 
