@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="/css/apiCall.css" />
 		<!-- JAVASCRIPT -->
 		<script src="/js/burgerButton.js" defer></script>
-		<script src="/js/sunAndMoon.js" defer></script>
+		<script src="/js/themeToggle.js" defer></script>
 		<script src="/js/unitConverter.js" defer></script>
 		<script src="/js/todoList.js" defer></script>
 		<script src="/js/apiCall.js" defer></script>
@@ -24,7 +24,7 @@
 		<!-- HEADER  -->
 		<header class="header">
 			<!-- THEME TOGGLE -->
-			<div id="sunAndMoon" class="sun"></div>
+			<div id="themeToggle" class="sun"></div>
 
 			<!-- PAGE NAVIGATION -->
 			<nav class="navBar">
@@ -92,7 +92,7 @@
 								><img class="projectImg" src="/images/gallery.png" alt="Preview of linked gallery site"
 							/></a>
 						</div>
-						
+
 						<!-- PROSJEKT 5 -->
 						<div class="projectCard">
 							<h3>Prosjekt 6</h3>
@@ -126,32 +126,38 @@
 				<h3>Prosjekt 4</h3>
 				<main class="project4">
 					<h4>Enhet konverterer</h4>
-					<label for="input" class="inputLabel">Skriv en verdi</label>
-					<input
-						type="number"
-						id="input"
-						class="
-					input" />
+					<label for="input" class="inputLabel"
+						>Skriv en verdi
+						<input type="number" id="unitInput" class="input" />
+					</label>
 
 					<div class="convertDiv">
 						<div class="convertValueDiv">
-							<label for="from" class="convertLabel">Fra:</label>
-							<select name="from" id="from" class="convertSelect">
-								<option value="meters">Meter</option>
-								<option value="kilometers">Kilometer</option>
-							</select>
+							<label for="fromUnitValue" class="convertLabel"
+								>Fra:
+								<select name="fromUnitValue" id="fromUnitValue" class="convertSelect">
+									<option value="MM">MM</option>
+									<option value="CM">CM</option>
+									<option value="M">M</option>
+									<option value="KM">KM</option>
+								</select>
+							</label>
 						</div>
 						<div class="convertValueDiv">
-							<label for="to" class="convertLabel">Til:</label>
-							<select name="to" id="to" class="convertSelect">
-								<option value="meters">Meter</option>
-								<option value="kilometers">Kilometer</option>
-							</select>
+							<label for="toUnitValue" class="convertLabel"
+								>Til:
+								<select name="toUnitValue" id="toUnitValue" class="convertSelect">
+									<option value="MM">MM</option>
+									<option value="CM">CM</option>
+									<option value="M">M</option>
+									<option value="KM">KM</option>
+								</select>
+							</label>
 						</div>
 					</div>
 
-					<button id="convertBtn" class="convertBtn">Konverter</button>
-					<p id="result" class="result"></p>
+					<button id="convertUnitButton" class="convertButton">Konverter</button>
+					<p id="displayUnitResult" class="result"></p>
 				</main>
 			</section>
 
@@ -160,12 +166,12 @@
 				<h3>Prosjekt 5</h3>
 				<main class="project5">
 					<h4>Gjøremål liste</h4>
-					<label for="task-input">Skriv gjøremålet</label>
+					<label for="inputTodoTask">Skriv gjøremålet</label>
 					<div>
-						<input type="text" id="task-input" />
-						<button id="add-task">Legg til gjøremålet</button>
+						<input type="text" id="inputTodoTask" />
+						<button id="addTodoTaskButton">Legg til gjøremålet</button>
 					</div>
-					<ul id="task-list"></ul>
+					<ul id="todoTaskList"></ul>
 				</main>
 			</section>
 
