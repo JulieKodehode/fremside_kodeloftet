@@ -1,51 +1,49 @@
-// First we must declare our global-scope variables.
-// If we declared them in the function, they wouldn't be usable anywhere but inside the function.
+function unitConverterApplication() {
+	// Retrieve and parse the input value from the input field
+	const unitInput = parseFloat(document.querySelector("#unitInput").value);
 
-// Global Variables
-const fromUnit = document.getElementById("from");
-const toUnit = document.getElementById("to");
-let button = document.getElementById("convertBtn");
+	// Retrieve option values from the select field
+	const fromUnitValue = document.querySelector("#fromUnitValue").value;
+	const toUnitValue = document.querySelector("#toUnitValue").value;
 
-function convert() {
-	// Inside the function, we declare the variables which need to be updated each time the function runs.
-	// If these were outside the function, their values would never update.
-	const inputValue = parseFloat(document.getElementById("input").value);
-	const fromUnitValue = document.getElementById("from").value;
-	const toUnitValue = document.getElementById("to").value;
+	// Creating a empty variable.
 	let result;
 
-	if (fromUnitValue === "meters" && toUnitValue === "kilometers") {
-		result = inputValue / 1000;
-	} else if (fromUnitValue === "meters" && toUnitValue === "miles") {
-		result = inputValue * 0.000621371;
-	} else if (fromUnitValue === "kilometers" && toUnitValue === "meters") {
-		result = inputValue * 1000;
-	} else if (fromUnitValue === "kilometers" && toUnitValue === "miles") {
-		result = inputValue * 0.621371;
-	} else if (fromUnitValue === "miles" && toUnitValue === "meters") {
-		result = inputValue * 1609.34;
-	} else if (fromUnitValue === "miles" && toUnitValue === "kilometers") {
-		result = inputValue * 1.60934;
+	// Perform conversion based on selected units
+	if (fromUnitValue === "MM" && toUnitValue === "CM") {
+		result = unitInput / 10;
+	} else if (fromUnitValue === "MM" && toUnitValue === "M") {
+		result = unitInput / 1000;
+	} else if (fromUnitValue === "MM" && toUnitValue === "KM") {
+		result = unitInput / 1000000;
+	} else if (fromUnitValue === "CM" && toUnitValue === "MM") {
+		result = unitInput * 10;
+	} else if (fromUnitValue === "CM" && toUnitValue === "M") {
+		result = unitInput / 100;
+	} else if (fromUnitValue === "CM" && toUnitValue === "KM") {
+		result = unitInput / 100000;
+	} else if (fromUnitValue === "M" && toUnitValue === "MM") {
+		result = unitInput * 1000;
+	} else if (fromUnitValue === "M" && toUnitValue === "CM") {
+		result = unitInput * 100;
+	} else if (fromUnitValue === "M" && toUnitValue === "KM") {
+		result = unitInput / 1000;
+	} else if (fromUnitValue === "KM" && toUnitValue === "MM") {
+		result = unitInput * 1000000;
+	} else if (fromUnitValue === "KM" && toUnitValue === "CM") {
+		result = unitInput * 100000;
+	} else if (fromUnitValue === "KM" && toUnitValue === "M") {
+		result = unitInput * 1000;
 	} else {
-		result = "There must be an error";
+		if (fromUnitValue === toUnitValue) {
+			alert("Select different units");
+			return;
+		}
 	}
-
-	// Showes error because result is a string and not a number
-	document.getElementById("result").textContent = `${result.toFixed(2)} ${toUnitValue}`;
+	// Set the result to be showed with unit value on page
+	displayUnitResult.textContent = `${result} ${toUnitValue}`;
 }
 
-// Targeting our "convert" button and adding an event listener so it runs the convert function(above) when we click it.
-button.addEventListener("click", convert);
-
-// Targeting the from & to inputs and adding an event listener which will listen for a change (when we change the dropdowns from miles to meters etc). When a change is detected, the sameUnits function will run.
-fromUnit.addEventListener("change", sameUnits);
-toUnit.addEventListener("change", sameUnits);
-
-// This sameUnits function checks if our 'from' & 'to' selections are the same, if so then the button is set to disabled. If they are not the same, the button is enabled.
-function sameUnits() {
-	if (fromUnit.value === toUnit.value) {
-		button.disabled = true;
-	} else {
-		button.disabled = false;
-	}
-}
+// Event Listener: Trigger the conversion function when the button is clicked
+const convertUnitButton = document.querySelector("#convertUnitButton");
+convertUnitButton.addEventListener("click", unitConverterApplication);

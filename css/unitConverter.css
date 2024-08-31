@@ -67,7 +67,7 @@
 	color: #333;
 }
 
-.convertBtn {
+.convertButton {
 	background-color: #3498db;
 	color: #fff;
 	padding: 12px 20px;
@@ -78,7 +78,7 @@
 	transition: background-color 0.3s ease;
 }
 
-.convertBtn:hover {
+.convertButton:hover {
 	background-color: #2980b9;
 }
 

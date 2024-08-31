@@ -37,7 +37,7 @@
 	/* border: 3px red solid; */
 }
 
-/* SUN AND MOON TOGGLE */
+/* THEME TOGGLE */
 .sun {
 	width: 32px;
 	height: 32px;
@@ -50,7 +50,7 @@
 	background-image: url(images/moon_filled.png);
 }
 
-/* NAV */
+/* PAGE NAVIGATION */
 .navBar {
 	display: flex;
 	flex-direction: row-reverse;
