@@ -3,7 +3,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	text-align: center;
 }
 
 /* BODY */
@@ -22,19 +21,12 @@
 	position: sticky;
 	top: 0;
 	min-width: 100%;
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
-	/* TEMP */
 	background-color: #fdfdfd;
 	border-bottom: 2px solid black;
-
 	padding: 1em;
-	/* Debug */
-	/* Red symbolize header and footer */
-	/* border: 3px red solid; */
 }
 
 /* THEME TOGGLE */
@@ -67,7 +59,6 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: flex-end;
-
 	list-style-type: none;
 }
 
@@ -120,7 +111,6 @@ a:hover {
 	min-height: 100vh;
 	min-height: 100svh;
 	width: 100%;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -141,10 +131,6 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	gap: 1em;
-
-	/* Debug */
-	/* Green symbolizes home */
-	/* border: 3px green solid; */
 }
 
 .intro {
@@ -156,13 +142,11 @@ a:hover {
 	max-width: 50%;
 }
 
-/* Image / portrait */
+/* Image portrait */
 .portrait {
-	/* TEMP FIX SIZE */
 	height: 30%;
 	width: 30%;
 	border-radius: 50%;
-
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
@@ -182,11 +166,5 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	padding: 1em;
-
-	/* TEMP */
 	background-color: #fdfdfd;
-
-	/* Debug */
-	/* Red symbolize header and footer */
-	/* border: 3px red solid; */
 }
