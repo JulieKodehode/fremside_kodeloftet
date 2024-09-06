@@ -1,0 +1,39 @@
+/* MOBILE S TO MOBILE L */
+@media screen and (max-width: 426px) {
+	/* HEADER */
+	.header {
+		align-items: flex-start;
+	}
+
+	.burgerButton {
+		display: inline;
+	}
+
+	.navBar {
+		flex-direction: column-reverse;
+	}
+
+	.navList {
+		display: none;
+	}
+
+	a {
+		padding-inline: 0;
+	}
+
+	.navHamburger {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* HOME SECTION */
+	.portrait {
+		height: 90%;
+		width: 90%;
+	}
+
+	/* ANIMATION SECTION */
+	.animationMain {
+		flex-direction: column;
+	}
+}

@@ -94,35 +94,6 @@ a:hover {
 	padding: 0.5em 1em;
 }
 
-/* MOBILE S TO MOBILE L */
-@media screen and (max-width: 426px) {
-	.header {
-		align-items: flex-start;
-	}
-
-	.burgerButton {
-		display: inline;
-	}
-
-	.navBar {
-		flex-direction: column-reverse;
-	}
-
-	.navList {
-		display: none;
-	}
-
-	a {
-		padding-inline: 0;
-	}
-
-	.navHamburger {
-		display: flex;
-		flex-direction: column;
-	}
-}
-
-/* MAIN */
 /* HOME SECTION */
 .home {
 	display: flex;
@@ -147,15 +118,6 @@ a:hover {
 	border-radius: 50%;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-
-/* MOBILE S TO MOBILE L */
-@media screen and (max-width: 426px) {
-	.portrait {
-		height: 90%;
-		width: 90%;
-	}
-}
-
 
 /* PROJECTS SECTION */
 .projects {
