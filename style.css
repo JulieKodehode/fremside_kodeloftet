@@ -1,9 +1,24 @@
-/* GENERAL */
+/* GLOBAL */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.section {
+	min-height: 100vh;
+	min-height: 100svh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 32px; /* Double standard */
+
+	/* DEBUG */
+	/* border: 1px solid red; */
+}
+
 
 /* BODY */
 .light {
@@ -15,6 +30,7 @@
 	background-color: #0d0d0d;
 	color: #fdfdfd;
 }
+
 
 /* HEADER */
 .header {
@@ -107,28 +123,7 @@ a:hover {
 }
 
 /* MAIN */
-.section {
-	min-height: 100vh;
-	min-height: 100svh;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 32px; /* Double standard */
-
-	/* DEBUG */
-	border: 1px solid red;
-}
-
-.projects {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-/* HOME */
+/* HOME SECTION */
 .home {
 	display: flex;
 	flex-direction: column;
@@ -146,7 +141,6 @@ a:hover {
 	max-width: 50%;
 }
 
-/* Image portrait */
 .portrait {
 	height: 30%;
 	width: 30%;
@@ -161,6 +155,23 @@ a:hover {
 		width: 90%;
 	}
 }
+
+
+/* PROJECTS SECTION */
+.projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ANIMATION SECTION */
+.animationMain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 /* FOOTER */
 .footer {
