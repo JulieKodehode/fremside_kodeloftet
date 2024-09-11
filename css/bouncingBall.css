@@ -1,15 +1,12 @@
-.bounceContainer {
+.bounceAnimationContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  height: 600px;
-  margin: 0;
-  overflow: hidden;
 }
 
-.circle {
+.bounceAnimationCircle {
   width: 100px;
   height: 100px;
   background-color: #3498db;
@@ -24,17 +21,17 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(200px); /* Move the circle down by 200px */
+    transform: translateY(200px); /* Move the bounceAnimationCircle down by 200px */
   }
 }
 
-.controls {
+.bounceAnimationControls {
    display: flex;
    align-items: center;
    gap: 16px;
 }
 
-.button {
+.bounceAnimationButton {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;

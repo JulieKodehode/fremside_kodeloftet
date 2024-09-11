@@ -1,24 +1,24 @@
-const circle = document.querySelector("#circle");
-const startButton = document.querySelector("#startButton");
-const pauseButton = document.querySelector("#pauseButton");
-const resetButton = document.querySelector("#resetButton");
+const bounceAnimationCircle = document.querySelector("#bounceAnimationCircle");
+const bounceAnimationStartButton = document.querySelector("#bounceAnimationStartButton");
+const bounceAnimationPauseButton = document.querySelector("#bounceAnimationPauseButton");
+const bounceAnimationResetButton = document.querySelector("#bounceAnimationResetButton");
 
 // Start the animation
-startButton.addEventListener("click", () => {
-  circle.style.animationPlayState = "running";
+bounceAnimationStartButton.addEventListener("click", () => {
+  bounceAnimationCircle.style.animationPlayState = "running";
 });
 
 // Pause the animation
-pauseButton.addEventListener("click", () => {
-  circle.style.animationPlayState = "paused";
+bounceAnimationPauseButton.addEventListener("click", () => {
+  bounceAnimationCircle.style.animationPlayState = "paused";
 });
 
 // Reset the animation
-resetButton.addEventListener("click", () => {
-  circle.style.animation = "none";
-  void circle.offsetWidth;
+bounceAnimationResetButton.addEventListener("click", () => {
+  bounceAnimationCircle.style.animation = "none";
+  void bounceAnimationCircle.offsetWidth;
 
   // Restart the animation
-  circle.style.animation = "bounce 2s infinite ease-in-out";
-  circle.style.animationPlayState = "paused";
+  bounceAnimationCircle.style.animation = "bounce 2s infinite ease-in-out";
+  bounceAnimationCircle.style.animationPlayState = "paused";
 });

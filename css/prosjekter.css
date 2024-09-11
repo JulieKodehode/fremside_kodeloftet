@@ -6,20 +6,22 @@
 }
 
 .projectCards {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 1em;
+	text-align: center;
 }
 
 .projectCard {
-	/* TEMP FIXED WIDTH */
-	max-width: 600px;
-
-	/* border: 1px solid black; */
+	width: 350px;
 }
 
 .projectImg {
-	max-width: 100%;
+	width: 300px;
+	height: 200px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.6);
 }
 
 @media screen and (max-width: 426px) {
