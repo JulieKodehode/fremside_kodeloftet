@@ -24,6 +24,10 @@ function todoApplication() {
 	// Append the paragraph to the list item
 	todoListItem.appendChild(displayTodoTask);
 
+	// Create a div element to contain the status buttons
+	const statusButtons = document.createElement("div");
+	statusButtons.className = "statusButtons";
+
 	// Create and configure the finished button
 	const finishedButton = document.createElement("button");
 	finishedButton.textContent = "Finished";
@@ -34,7 +38,7 @@ function todoApplication() {
 		displayTodoTask.classList.toggle("finished");
 	});
 	// Append the finished button to the list item
-	todoListItem.appendChild(finishedButton);
+	statusButtons.appendChild(finishedButton);
 
 	// Create and configure the delete button
 	const deleteButton = document.createElement("button");
@@ -49,7 +53,10 @@ function todoApplication() {
 		}
 	});
 	// Append the delete button to the list item
-	todoListItem.appendChild(deleteButton);
+	statusButtons.appendChild(deleteButton);
+
+	// Append the status buttons div to the list item
+	todoListItem.appendChild(statusButtons);
 
 	// Append the new list item (with buttons) to the task list
 	todoTaskList.appendChild(todoListItem);
