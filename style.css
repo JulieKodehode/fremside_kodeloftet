@@ -1,24 +1,21 @@
-/* GLOBAL */
+/* GENERAL */
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
 }
 
 .section {
 	min-height: 100vh;
-	min-height: 100svh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 32px; /* Double standard */
-
-	/* DEBUG */
-	/* border: 1px solid red; */
+	padding: 8px;
 }
-
 
 /* BODY */
 .light {
@@ -31,30 +28,32 @@
 	color: #fdfdfd;
 }
 
-
 /* HEADER */
 .header {
 	position: sticky;
 	top: 0;
-	min-width: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #fdfdfd;
 	border-bottom: 2px solid black;
-	padding: 1em;
+	padding: 1.5em;
 }
 
 /* THEME TOGGLE */
-.sun {
+.sun, .moon {
 	width: 32px;
 	height: 32px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.sun {
 	background-image: url(images/sun_filled.png);
 }
 
 .moon {
-	width: 32px;
-	height: 32px;
 	background-image: url(images/moon_filled.png);
 }
 
@@ -103,48 +102,63 @@ a:hover {
 	gap: 1em;
 }
 
-.intro {
+.homeIntro {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.homeIntroLeft, .homeIntroRight {
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 1em;
-	max-width: 50%;
+}
+
+.homeIntroRight > p {
+	height: 60%;
+	width: 60%;
+}
+
+.uppercase {
+	text-transform: uppercase;
 }
 
 .portrait {
-	height: 30%;
-	width: 30%;
+	height: 60%;
+	width: 60%;
 	border-radius: 50%;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 /* PROJECTS SECTION */
 .projects {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
 }
 
 /* ANIMATION SECTION */
 .animationMain {
-	min-width: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 25%;
 }
 
-
 /* FOOTER */
 .footer {
-	min-width: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 1em;
 	background-color: #fdfdfd;
+	color: #0d0d0d;
 }

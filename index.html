@@ -1,205 +1,234 @@
 <!DOCTYPE html>
 <html lang="nb">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Prosjekt portfolio</title>
-		<link rel="shortcut icon" href="/images/pizza.ico" type="image/x-icon" />
-		<!-- CSS -->
-		<link rel="stylesheet" href="/style.css" />
-		<link rel="stylesheet" href="/css/nameAnimation.css" />
-		<link rel="stylesheet" href="/css/unitConverter.css" />
-		<link rel="stylesheet" href="/css/todoList.css" />
-		<link rel="stylesheet" href="/css/prosjekter.css" />
-		<link rel="stylesheet" href="/css/apiCall.css" />
-		<link rel="stylesheet" href="/css/bouncingBall.css" />
-		<link rel="stylesheet" href="/mediaQuery.css"> <!-- !ALWAYS BOTTOM!-->
-		<!-- JAVASCRIPT -->
-		<script src="/js/burgerButton.js" defer></script>
-		<script src="/js/themeToggle.js" defer></script>
-		<script src="/js/unitConverter.js" defer></script>
-		<script src="/js/todoList.js" defer></script>
-		<script src="/js/apiCall.js" defer></script>
-		<script src="/js/bouncingBall.js" defer></script>
-	</head>
-	<body id="body" class="light">
-		<!-- HEADER  -->
-		<header class="header">
-			<!-- THEME TOGGLE -->
-			<div id="themeToggle" class="sun"></div>
 
-			<!-- PAGE NAVIGATION -->
-			<nav class="navBar">
-				<ul class="navList" id="navBar">
-					<li class="navListItem"><a href="#home">Hjem</a></li>
-					<li class="navListItem"><a href="#projects">Prosjekter</a></li>
-					<li class="navListItem"><a href="#animation">Animasjon</a></li>
-					<li class="navListItem">
-						<a href="#unitconverter">Enhet konverterer</a>
-					</li>
-					<li class="navListItem">
-						<a href="#todolist">Gjøremål liste</a>
-					</li>
-					<li class="navListItem">
-						<a href="#apicall">Web API</a>
-					</li>
-				</ul>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- BROWSER -->
+	<title>Julies hjemmeside</title>
+	<link rel="shortcut icon" href="/images/pizza.ico" type="image/x-icon" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="/style.css" />
+	<link rel="stylesheet" href="/css/nameAnimation.css" />
+	<link rel="stylesheet" href="/css/unitConverter.css" />
+	<link rel="stylesheet" href="/css/todoList.css" />
+	<link rel="stylesheet" href="/css/prosjekter.css" />
+	<link rel="stylesheet" href="/css/apiCall.css" />
+	<link rel="stylesheet" href="/css/bouncingBall.css" />
+	<link rel="stylesheet" href="/mediaQuery.css"> <!-- !ALWAYS BOTTOM!-->
+	<!-- JAVASCRIPT -->
+	<script src="/js/burgerButton.js" defer></script>
+	<script src="/js/themeToggle.js" defer></script>
+	<script src="/js/unitConverter.js" defer></script>
+	<script src="/js/todoList.js" defer></script>
+	<script src="/js/apiCall.js" defer></script>
+	<script src="/js/bouncingBall.js" defer></script>
+</head>
 
-				<!-- HAMBURGER MENU OPTION -->
-				<img class="burgerButton" id="burgerButton" src="images/more.png" />
-			</nav>
-		</header>
+<body id="body" class="light">
+	<!-- HEADER  -->
+	<header class="header">
+		<!-- THEME TOGGLE -->
+		<div id="themeToggle" class="sun"></div>
 
-		<!-- MAIN -->
-		<main>
-			<!-- HOME -->
-			<section id="home" class="section home">
-				<div class="intro">
-					<h1>JULIE</h1>
-					<img class="portrait" src="images/cartoonprofilepic.png" alt="tegnet portrett av Julie" />
-					<h2>Dette er en Fremside som viser mine prosjekter</h2>
+		<!-- PAGE NAVIGATION -->
+		<nav class="navBar">
+			<ul class="navList" id="navBar">
+				<li class="navListItem"><a href="#home">Hjem</a></li>
+				<li class="navListItem"><a href="#projects">Prosjekter</a></li>
+				<li class="navListItem"><a href="#animation">Animasjon</a></li>
+				<li class="navListItem">
+					<a href="#unitconverter">Enhet konverterer</a>
+				</li>
+				<li class="navListItem">
+					<a href="#todolist">Gjøremål liste</a>
+				</li>
+				<li class="navListItem">
+					<a href="#apicall">Web API</a>
+				</li>
+			</ul>
+
+			<!-- HAMBURGER MENU OPTION -->
+			<img class="burgerButton" id="burgerButton" src="images/more.png" />
+		</nav>
+	</header>
+
+	<!-- MAIN -->
+	<main>
+		<!-- HOME -->
+		<section id="home" class="section home">
+			<div class="homeIntro">
+				<div class="homeIntroLeft">
+					<h1 class="uppercase">Julie Hauge</h1>
+					<img class="portrait" src="images/cartoonprofilepic.png"
+						alt="tegnet portrett av Julie" />
+				</div>
+
+				<div class="homeIntroRight">
+					<h2>Velkommen til min side</h2>
 					<p>
-						Her på denne nettsiden vil jeg vise frem prosjekter som jeg har laget på web-utvikler kurset
-						Kodeloftet. Jeg har lært HTML, CSS og JS som jeg kommer til å vise i desse prosjektene.
+						Hei! Jeg heter Julie, og jeg har nylig fullført et kurs i
+						web-utvikling gjennom Jobloop. På kurset har jeg lært HTML,
+						CSS og JavaScript, og jeg har brukt disse teknologiene til å
+						utvikle nettsiden og prosjektene du ser her. I tillegg har jeg
+						fått erfaring med verktøy som GitHub, Vercel/Netlify og Figma.
 					</p>
+
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<!-- PROJECTS -->
-			<section id="projects" class="section projects">
-				<h2>Mine større prosjekter</h2>
+		<!-- PROJECTS -->
+		<section id="projects" class="section projects">
+			<h2>Mine større prosjekter</h2>
 
-				<div class="projectDisplay">
-					<div class="projectCards">
-						<!-- PROSJEKT 1 -->
-						<div class="projectCard">
-							<h3>Parallax</h3>
-							<a href="projects/prosjekt1/index.html" target="_blank">
-								<img class="projectImg" src="/images/parallax.png" alt="Preview of liked parallax site"/>
-							</a>
-							<p>
-								I dette prosjektet har jeg prøvd med på scroll effekten parallax for å lage dybde i nettsiden med å ha statiske bilder og illusjonen av at tekst boksene flyter i fremgrunnen.
-							</p>
-						</div>
+			<div class="projectDisplay">
+				<div class="projectCards">
+					<!-- PROSJEKT 1 -->
+					<div class="projectCard">
+						<h3>Parallax</h3>
+						<a href="projects/prosjekt1/index.html" target="_blank">
+							<img class="projectImg" src="/images/parallax.png"
+								alt="Preview of liked parallax site" />
+						</a>
+						<p>
+							I dette prosjektet har jeg prøvd med på scroll effekten
+							parallax for å lage dybde i nettsiden med å ha statiske
+							bilder og illusjonen av at tekst boksene flyter i
+							fremgrunnen.
+						</p>
+					</div>
 
-						<!-- PROSJEKT 2 -->
-						<div class="projectCard">
-							<h3>Gallery</h3>
-							<a href="/projects/gallery/index.html" target="_blank">
-								<img class="projectImg" src="/images/gallery.png" alt="Preview of linked gallery site"/>
-							</a>
-							<p>I dette prosjektet har jeg fokusert på å bruke grid-metoden for plassering for å gjøre nettsiden responsiv i fire forskjellige størrelser. Jeg har også eksperimentert med å skape bakgrunnsdetaljer som fremhever bildene.</p>
-						</div>
+					<!-- PROSJEKT 2 -->
+					<div class="projectCard">
+						<h3>Gallery</h3>
+						<a href="/projects/gallery/index.html" target="_blank">
+							<img class="projectImg" src="/images/gallery.png"
+								alt="Preview of linked gallery site" />
+						</a>
+						<p>I dette prosjektet har jeg fokusert på å bruke grid-metoden
+							for plassering for å gjøre nettsiden responsiv i fire
+							forskjellige størrelser. Jeg har også eksperimentert med å
+							skape bakgrunnsdetaljer som fremhever bildene.</p>
+					</div>
 
-						<!-- PROSJEKT 7 -->
-						<div class="projectCard">
-							<h3>Sign-up form</h3>
-							<a href="projects/prosjekt6/index.html" target="_blank">
-								<img class="projectImg" src="./images/multistepform.png" 	alt="Preview of linked multi-step form site"/>
-							</a>
-							<p>
-								I dette prosjektet har jeg fokusert på JavaScript for å sette opp et sign-up form som går gjennom fire steg som sjekker etter korrekt utfylling før neste steg vises. Dette er kun et demonstrasjonsskjema, så utfyllingen lagres ikke.
-							</p>
-						</div>
+					<!-- PROSJEKT 7 -->
+					<div class="projectCard">
+						<h3>Sign-up form</h3>
+						<a href="projects/prosjekt6/index.html" target="_blank">
+							<img class="projectImg" src="./images/multistepform.png"
+								alt="Preview of linked multi-step form site" />
+						</a>
+						<p>
+							I dette prosjektet har jeg fokusert på JavaScript for å
+							sette opp et sign-up form som går gjennom fire steg som
+							sjekker etter korrekt utfylling før neste steg vises. Dette
+							er kun et demonstrasjonsskjema, så utfyllingen lagres ikke.
+						</p>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<!-- PROSJEKT 3 -->
-			<section id="animation" | class="section project">
-				<h2>Animasjons prosjekter</h2>
-				<main class="animationMain">
-					<!-- Animation on text -->
-					<div class="nameAnimationContainer">
-						<h2 class="nameAnimationText">Julie</h2>
+		<!-- PROSJEKT 3 -->
+		<section id="animation" | class="section project">
+			<h2>Animasjons prosjekter</h2>
+			<main class="animationMain">
+				<!-- ANIMATION ON TEXT -->
+				<div class="nameAnimationContainer">
+					<h2 class="nameAnimationText">Julie</h2>
+				</div>
+
+				<!-- ANIMATION ON ELEMENT-->
+				<div class="bounceAnimationContainer">
+					<div class="bounceAnimationControls">
+						<button id="bounceAnimationStartButton"
+							class="bounceAnimationButton">Start</button>
+						<button id="bounceAnimationPauseButton"
+							class="bounceAnimationButton">Pause</button>
+						<button id="bounceAnimationResetButton"
+							class="bounceAnimationButton">Reset</button>
 					</div>
-
-					<!-- Animation on element -->
-					<div class="bounceAnimationContainer">
-						<div class="bounceAnimationControls">
-							<button id="bounceAnimationStartButton" class="bounceAnimationButton">Start</button>
-							<button id="bounceAnimationPauseButton" class="bounceAnimationButton">Pause</button>
-							<button id="bounceAnimationResetButton" class="bounceAnimationButton">Reset</button>
-						</div>
-						<div id="bounceAnimationCircle" class="bounceAnimationCircle"></div>
+					<div id="bounceAnimationCircle" class="bounceAnimationCircle">
 					</div>
-				</main>
-			</section>
+				</div>
+			</main>
+		</section>
 
-			<!-- PROSJEKT 4 -->
-			<section id="unitconverter" class="section project">
-				<h2>Målenhet Konverterer Prosjekt</h2>
-				<main class="project4">
-					<h4>Enhet konverterer</h4>
-					<label for="input" class="inputLabel"
-						>Skriv en verdi
-						<input type="number" id="unitInput" class="input" />
-					</label>
+		<!-- PROSJEKT 4 -->
+		<section id="unitconverter" class="section project">
+			<h2>Målenhet Konverterer Prosjekt</h2>
+			<main class="project4">
+				<h4>Enhet konverterer</h4>
+				<label for="input" class="inputLabel">Skriv en verdi
+					<input type="number" id="unitInput" class="input" />
+				</label>
 
-					<div class="convertDiv">
-						<div class="convertValueDiv">
-							<label for="fromUnitValue" class="convertLabel"
-								>Fra:
-								<select name="fromUnitValue" id="fromUnitValue" class="convertSelect">
-									<option value="MM">MM</option>
-									<option value="CM">CM</option>
-									<option value="M">M</option>
-									<option value="KM">KM</option>
-								</select>
-							</label>
-						</div>
-						<div class="convertValueDiv">
-							<label for="toUnitValue" class="convertLabel"
-								>Til:
-								<select name="toUnitValue" id="toUnitValue" class="convertSelect">
-									<option value="MM">MM</option>
-									<option value="CM">CM</option>
-									<option value="M">M</option>
-									<option value="KM">KM</option>
-								</select>
-							</label>
-						</div>
+				<div class="convertDiv">
+					<div class="convertValueDiv">
+						<label for="fromUnitValue" class="convertLabel">Fra:
+							<select name="fromUnitValue" id="fromUnitValue"
+								class="convertSelect">
+								<option value="MM">MM</option>
+								<option value="CM">CM</option>
+								<option value="M">M</option>
+								<option value="KM">KM</option>
+							</select>
+						</label>
 					</div>
-
-					<button id="convertUnitButton" class="convertButton">Konverter</button>
-					<p id="displayUnitResult" class="result"></p>
-				</main>
-			</section>
-
-			<!-- PROSJEKT 5 -->
-			<section id="todolist" class="section project">
-				<h2>Gjøremålsliste prosjekt</h2>
-				<main class="project5">
-					<h4>Gjøremål liste</h4>
-					<label for="inputTodoTask">Skriv gjøremålet</label>
-					<div>
-						<input type="text" id="inputTodoTask" />
-						<button id="addTodoTaskButton">Legg til gjøremålet</button>
+					<div class="convertValueDiv">
+						<label for="toUnitValue" class="convertLabel">Til:
+							<select name="toUnitValue" id="toUnitValue"
+								class="convertSelect">
+								<option value="MM">MM</option>
+								<option value="CM">CM</option>
+								<option value="M">M</option>
+								<option value="KM">KM</option>
+							</select>
+						</label>
 					</div>
-					<ul id="todoTaskList"></ul>
-				</main>
-			</section>
+				</div>
 
-			<!-- PROSJEKT 6 -->
-			<section id="apicall" class="section project">
-				<h2>API-data prosjekt</h2>
-				<main class="project7">
-					<div class="factDiv">
-						<h3 class="factHeading">Fact:</h3>
-						<p id="catFact" class="catFact"></p>
-					</div>
-					<button id="factButton" class="factButton">New fact</button>
-				</main>
-			</section>
-		</main>
+				<button id="convertUnitButton"
+					class="convertButton">Konverter</button>
+				<p id="displayUnitResult" class="result"></p>
+			</main>
+		</section>
 
-		<!-- FOOTER -->
-		<footer class="footer">
-			<h4>Laget av Julie Hauge</h4>
-			<a href="https://github.com/juliekodehode"
-				><img src="images/github-sign.png" alt="github icon"
-			/></a>
-		</footer>
-	</body>
+		<!-- PROSJEKT 5 -->
+		<section id="todolist" class="section project">
+			<h2>Gjøremålsliste prosjekt</h2>
+			<main class="project5">
+				<h4>Gjøremål liste</h4>
+				<label for="inputTodoTask">Skriv gjøremålet</label>
+				<div>
+					<input type="text" id="inputTodoTask" />
+					<button id="addTodoTaskButton">Legg til gjøremålet</button>
+				</div>
+				<ul id="todoTaskList"></ul>
+			</main>
+		</section>
+
+		<!-- PROSJEKT 6 -->
+		<section id="apicall" class="section project">
+			<h2>API-data prosjekt</h2>
+			<main class="project7">
+				<div class="factDiv">
+					<h3 class="factHeading">Fact:</h3>
+					<p id="catFact" class="catFact"></p>
+				</div>
+				<button id="factButton" class="factButton">New fact</button>
+			</main>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<h4>Laget av Julie Hauge</h4>
+		<a href="https://github.com/juliekodehode"><img
+				src="images/github-sign.png" alt="github icon" /></a>
+	</footer>
+</body>
+
 </html>
